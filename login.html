@@ -102,9 +102,14 @@ Don't have an account?
 const CLIENT_ID = "33MqJooG5CpHcSnVy04Pb";
 
 document.getElementById("loginBtn").addEventListener("click", function () {
+
+    const redirect = "https://pulsetrades.site/auth/callback.html";
+
     window.location.href =
         "https://oauth.deriv.com/oauth2/authorize?app_id=" +
         CLIENT_ID +
         "&l=EN&redirect_uri=" +
-        encodeURIComponent("https://pulsetrades.onrender.com/callback.html");
+        encodeURIComponent(redirect);
+
 });
+</script>
