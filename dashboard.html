@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseTrades Dashboard</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+display:flex;
+}
+
+.sidebar{
+width:240px;
+height:100vh;
+background:#161b22;
+padding:20px;
+position:fixed;
+left:0;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00d084;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:14px;
+margin:8px 0;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.sidebar a:hover{
+background:#00d084;
+}
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.balance{
+background:#00d084;
+padding:10px 20px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.content{
+padding:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:#161b22;
+padding:25px;
+border-radius:10px;
+}
+
+.card h3{
+color:#00d084;
+margin-bottom:10px;
+}
+
+.chart{
+background:#161b22;
+height:500px;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+color:#888;
+margin-bottom:30px;
+}
+
+.buttons button{
+padding:15px 30px;
+margin-right:15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.run{
+background:#00d084;
+color:white;
+}
+
+.stop{
+background:#d62828;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">PulseTrades</div>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="#">Markets</a>
+<a href="#">Bot Builder</a>
+<a href="#">Copy Trading</a>
+<a href="#">Strategy Builder</a>
+<a href="#">Market Analysis</a>
+<a href="#">Portfolio</a>
+<a href="index.html">Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<h2>Trading Dashboard</h2>
+
+<div class="balance">
+Balance: $0.00
+</div>
+
+</div>
+
+<div class="content">
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Trades</h3>
+<p>0</p>
+</div>
+
+<div class="card">
+<h3>Profit</h3>
+<p>$0.00</p>
+</div>
+
+<div class="card">
+<h3>Active Bots</h3>
+<p>0</p>
+</div>
+
+<div class="card">
+<h3>Win Rate</h3>
+<p>0%</p>
+</div>
+
+</div>
+
+<div class="chart">
+TradingView Chart will appear here
+</div>
+
+<div class="buttons">
+<button class="run">▶ Start Bot</button>
+<button class="stop">■ Stop Bot</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
