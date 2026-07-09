@@ -1,17 +1,8 @@
-// Deriv OAuth callback
+console.log(window.location.href);
+console.log(window.location.search);
 
 const params = new URLSearchParams(window.location.search);
 
-const token = params.get("token1");
-const account = params.get("acct1");
-
-if (token) {
-    localStorage.setItem("deriv_token", token);
+for (const [key, value] of params.entries()) {
+    console.log(key, value);
 }
-
-if (account) {
-    localStorage.setItem("deriv_account", account);
-}
-
-// Redirect to dashboard
-window.location.href = "/dashboard.html";
